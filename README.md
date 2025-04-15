@@ -26,28 +26,9 @@ A full-stack web application designed to help manage therapists, clients, and se
 ---
 ## Screenshots
 
-### Therapist Management
-
-This screenshot shows the therapist management page where you can view, add, update, and delete therapist records.
-
 ![Therapist Management](screenshots/therapists.png)
-
-### Client Management
-
-The client management page where you can perform CRUD operations on client data.
-
 ![Client Management](screenshots/clients.png)
-
-### Session Management
-
-Manage therapy sessions by scheduling and assigning them to therapists and clients.
-
 ![Session Management](screenshots/sessions.png)
-
-### Home Page
-
-The home page of the system provides a quick overview of available features and navigation options.
-
 ![Home Page](screenshots/home.png)
 
 ---
