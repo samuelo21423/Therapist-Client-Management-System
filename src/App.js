@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
+import Home from './pages/Home';
+import TherapistPage from './pages/TherapistPage';
+import ClientPage from './pages/ClientPage';
+import SessionPage from './pages/SessionPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <h1>Therapist Client Management System</h1>
+
+        {/* Navigation */}
+        <nav>
+          <Link to="/"><button>Home</button></Link>
+          <Link to="/therapists"><button>Therapists</button></Link>
+          <Link to="/clients"><button>Clients</button></Link>
+          <Link to="/sessions"><button>Sessions</button></Link>
+        </nav>
+
+        {/* Page Routes */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/therapists" element={<TherapistPage />} />
+          <Route path="/clients" element={<ClientPage />} />
+          <Route path="/sessions" element={<SessionPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

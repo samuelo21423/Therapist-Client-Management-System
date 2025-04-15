@@ -1,0 +1,152 @@
+/* General Layout */
+div {
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+}
+
+tbody tr {
+  transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* Action Buttons (Edit/Delete) */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:nth-child(1) {
+  background-color: #4CAF50; /* Green for Edit */
+  color: white;
+}
+
+button:nth-child(2) {
+  background-color: #f44336; /* Red for Delete */
+  color: white;
+}
+
+button:focus {
+  outline: 2px solid #007bff; /* Focus state for accessibility */
+}
+
+/* Form Styles */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+input::placeholder, select::placeholder {
+  color: #bbb;
+}
+
+button[type="button"] {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="button"]:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+/* Small screen / Mobile adjustments */
+@media (max-width: 768px) {
+  div {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
