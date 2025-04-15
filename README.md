@@ -26,9 +26,16 @@ A full-stack web application designed to help manage therapists, clients, and se
 ---
 ## Screenshots
 
+### Therapist Management
 ![Therapist Management](screenshots/therapists.png)
+
+### Client Management
 ![Client Management](screenshots/clients.png)
+
+### Session Management
 ![Session Management](screenshots/sessions.png)
+
+### Home Page
 ![Home Page](screenshots/home.png)
 
 ---
@@ -40,4 +47,10 @@ A full-stack web application designed to help manage therapists, clients, and se
 ```bash
 git clone https://github.com/samuelo21423/Therapist-Client-Management-System.git
 cd Therapist-Client-Management-System
+```
 
+### 2. Install Dependencies
+
+### 3. Set Up Environment Variables (.env)
+
+### 4. Running the backend and frontend servers 
