@@ -7,6 +7,7 @@ A full-stack web application designed to help manage therapists, clients, and se
 - 📋 Add, edit, and delete therapists, clients, and session records
 - 📂 Organized routing and controller structure
 - 📦 Backend with Node.js, Express
+- 🧩 mySQL used for database
 - 🎨 Frontend with React and CSS
 - 🌐 RESTful API integration between frontend and backend
 
